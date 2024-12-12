@@ -1,0 +1,85 @@
+.marqueue {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+
+  &-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &-title {
+    max-width: 469px;
+    color: $dark-gray;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 28px;
+    text-align: center;
+  }
+  &-wrapper {
+    display: flex;
+    width: 200%;
+    gap: 20px;
+
+    position: relative;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      width: 300px;
+      pointer-events: none;
+      z-index: 1;
+    }
+
+    &::before {
+      left: 0;
+      background: linear-gradient(to right, #f6f9fe, #f6f9fe00);
+    }
+
+    &::after {
+      right: 50%;
+      background: linear-gradient(to left, #f6f9fe, #f6f9fe00);
+    }
+  }
+  &-group {
+    display: flex;
+    gap: 20px;
+    padding: 7px 0;
+    animation: scroll-x 20s linear infinite;
+
+    &__container {
+      display: flex;
+      width: 335px;
+      height: 161px;
+      justify-content: center;
+      align-items: center;
+      background: #fff;
+      img {
+        object-fit: contain;
+      }
+    }
+  }
+}
+@media (max-width: 1200px) {
+  .marqueue {
+    &-group {
+      img {
+        width: 100px;
+      }
+    }
+  }
+}
+@media (max-width: 768px) {
+  .marqueue {
+    &-wrapper {
+      gap: 50px;
+    }
+    &-group {
+      gap: 50px;
+    }
+  }
+}

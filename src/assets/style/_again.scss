@@ -1,0 +1,125 @@
+.again {
+  padding: 0 0 120px 0;
+  overflow: hidden;
+  &-section {
+    display: flex;
+    padding: 80px 100px;
+    flex-direction: column;
+    align-items: center;
+    gap: 70px;
+    border-radius: 30px;
+    background: linear-gradient(138deg, #084e8c 15.31%, #097be0 84.79%);
+    overflow: hidden;
+  }
+  &-subtitle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+
+    &__title {
+      color: #fff;
+      text-align: center;
+      font-size: 48px;
+      font-weight: 700;
+      line-height: 48px;
+      width: 971px;
+    }
+    &__price {
+      color: #f7f7f7;
+      text-align: center;
+      font-size: 20px;
+      font-weight: 700;
+      line-height: 26px;
+    }
+  }
+  &-containers {
+    display: flex;
+    // width: 1400px;
+    align-items: center;
+    gap: 20px;
+
+    width: 200%;
+    position: relative;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      width: 300px;
+      pointer-events: none;
+      z-index: 1;
+    }
+
+    &::before {
+      left: 20%;
+      background: linear-gradient(to right, #084e8c, #084e8c00);
+    }
+
+    &::after {
+      right: 20%;
+      background: linear-gradient(to left, #084e8c, #084e8c00);
+    }
+  }
+  &-container {
+    display: flex;
+    width: 453px;
+    height: 451.7px;
+    padding: 50px 30px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 25px;
+    flex-shrink: 0;
+    border-radius: 20px;
+    background: #fff;
+    animation: scroll-x 20s linear infinite;
+
+    &__desc {
+      max-width: 361px;
+      color: #181818;
+      font-size: 20px;
+      font-weight: 700;
+      line-height: 26px;
+      height: 181px;
+    }
+    &__border {
+      width: 393px;
+      height: 1px;
+      background: #f7f7f7;
+    }
+    &__info {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 15px;
+      &-image {
+        img {
+          width: 59px;
+          height: 59px;
+          border-radius: 59px;
+        }
+      }
+      &-desc {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5px;
+      }
+      &-name {
+        color: #808080;
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 20px;
+        letter-spacing: 0.4px;
+      }
+      &-work {
+        color: #3680fa;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 20.8px;
+      }
+    }
+  }
+}

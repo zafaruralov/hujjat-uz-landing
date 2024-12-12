@@ -1,0 +1,236 @@
+.share {
+  padding: 120px 0;
+
+  &-section {
+    display: flex;
+    justify-content: center;
+    padding: 60px 120px 0 56px;
+    border-radius: 32px;
+    background: #fff url("@/assets/icons/share-group.png") no-repeat;
+    background-position: right;
+    background-size: contain;
+
+    height: 587px;
+    max-width: 1600px;
+
+    &__wrapper {
+      display: inline-flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 112px;
+
+      &-content {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 48px;
+      }
+      &-title {
+        color: $light-black;
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 56px;
+      }
+    }
+    &__lists {
+      display: flex;
+      width: 552px;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 24px;
+      padding: 0;
+    }
+    &__list {
+      display: flex;
+      align-items: flex-start;
+      gap: 16px;
+      align-self: stretch;
+
+      &-text {
+        color: $light-dark-gray;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 22.4px;
+      }
+    }
+    &__icon {
+      display: flex;
+    }
+  }
+  @media (max-width: 1440px) {
+    &-wrapper {
+      padding: $padding-1440;
+    }
+    &-section {
+      gap: 30px;
+
+      &__icon {
+        img {
+          max-width: 450px;
+          max-height: 450px;
+        }
+      }
+    }
+
+    &-container {
+      &__section {
+        padding: 18px 40px 18px 25px;
+        height: 120px;
+
+        &-title {
+          font-size: 14px;
+        }
+
+        &-desc {
+          font-size: 12px;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 1200px) {
+    &-wrapper {
+      padding: $padding-1200;
+    }
+    &-section {
+      gap: 25px;
+      padding: 20px;
+      flex-direction: column;
+      align-items: center;
+      height: auto;
+      &__wrapper {
+        gap: 60px;
+        align-items: center;
+        &-content {
+          align-items: center;
+          gap: 24px;
+        }
+        &-title {
+          text-align: center;
+        }
+      }
+
+      &__icon {
+        img {
+          max-width: 400px;
+          max-height: 400px;
+        }
+      }
+    }
+
+    &-container {
+      &__section {
+        padding: 15px 35px 15px 20px;
+        height: 110px;
+
+        &-title {
+          font-size: 13px;
+        }
+
+        &-desc {
+          font-size: 11px;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 920px) {
+    padding: 0 0 80px 0;
+    &-wrapper {
+      padding: $padding-920;
+    }
+
+    &-section {
+      gap: 20px;
+
+      &__icon {
+        img {
+          max-width: 350px;
+          max-height: 350px;
+        }
+      }
+    }
+
+    &-container {
+      gap: 10px;
+
+      &__section {
+        padding: 12px 30px 12px 15px;
+        height: 90px;
+
+        &-title {
+          font-size: 12px;
+        }
+
+        &-desc {
+          font-size: 10px;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    padding: 0 0 60px 0;
+
+    &-wrapper {
+      padding: $padding-768;
+    }
+
+    &-section {
+      gap: 15px;
+
+      &__icon {
+        img {
+          max-width: 300px;
+          max-height: 300px;
+        }
+      }
+    }
+
+    &-container {
+      &__section {
+        padding: 10px 25px 10px 10px;
+        height: 80px;
+
+        &-title {
+          font-size: 11px;
+        }
+
+        &-desc {
+          font-size: 9px;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 480px) {
+    &-wrapper {
+      padding: $padding-480;
+    }
+    &-section {
+      gap: 10px;
+
+      &__icon {
+        img {
+          max-width: 250px;
+          max-height: 250px;
+        }
+      }
+    }
+
+    &-container {
+      &__section {
+        padding: 8px 20px 8px 8px;
+        height: 70px;
+
+        &-title {
+          font-size: 10px;
+        }
+
+        &-desc {
+          font-size: 8px;
+        }
+      }
+    }
+  }
+}
