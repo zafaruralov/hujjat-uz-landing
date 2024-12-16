@@ -35,14 +35,14 @@ function toggleActiveContainer(id) {
     <div class="overview-wrapper container">
       <div class="overview-section">
         <div class="compare-subtitle">
-          <h1 class="compare-subtitle__title">Обзор платформы</h1>
-          <p class="overview-section__title">
+          <h1 class="compare-subtitle__title reveal">Обзор платформы</h1>
+          <p class="overview-section__title reveal right">
             При работе в системе традиционные бумажные документы заменяется на электронные документы, что устраняет
             многие из его недостатков, при этом сохраняя документы в неизменном виде.
           </p>
         </div>
         <div class="overview-container">
-          <img :src="OverViewDashboard" alt="OverViewDashboard" class="overview-container__icon" />
+          <img :src="OverViewDashboard" alt="OverViewDashboard" class="overview-container__icon reveal" />
           <div class="overview-container__sections">
             <div
               v-for="item in data"

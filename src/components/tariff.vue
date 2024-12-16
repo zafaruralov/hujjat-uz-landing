@@ -2,9 +2,13 @@
 import { reactive, ref } from "vue";
 
 let active = ref(2);
+let isModalOpen = ref(true);
 
 function toggleActive(id) {
   active.value = id;
+}
+function toggleModal() {
+  isModalOpen.value = !isModalOpen.value;
 }
 
 const data = reactive([
@@ -43,8 +47,11 @@ const data = reactive([
     <div class="tariff-wrapper container">
       <div class="tariff-section">
         <div class="tariff-subtitle">
-          <h1 class="tariff-subtitle__title">Тарифные планы</h1>
-          <p class="tariff-subtitle__desc">Удобный сервис, по доступной цене</p>
+          <h1 class="tariff-subtitle__title reveal">Тарифные планы</h1>
+          <p class="tariff-subtitle__desc reveal right">
+            Наши тарифные планы станут доступны с 1 января 2025 года. Следите за новостями, чтобы выбрать подходящий
+            вариант!
+          </p>
         </div>
         <div class="tariff-sections">
           <div
@@ -106,7 +113,7 @@ const data = reactive([
               <h1 class="tariff-container__actions-price">
                 {{ item.price }}
               </h1>
-              <div class="action" :class="active === item.id ? 'primary white' : ' secondary'">
+              <div @click="toggleModal" class="action" :class="active === item.id ? 'primary white' : ' secondary'">
                 Выбор тарифа
                 <div class="action-icon right">
                   <svg
@@ -136,7 +143,7 @@ const data = reactive([
               </div>
             </div>
           </div>
-          <div class="tariff-integration">
+          <div class="tariff-integration reveal right">
             <div class="tariff-integration__subtitle">
               <div class="tariff-container__subtitle">
                 <h1 class="tariff-container__subtitle-title">Интеграционный</h1>
@@ -157,6 +164,15 @@ const data = reactive([
           </div>
         </div>
       </div>
+    </div>
+  </div>
+  <div v-if="isModalOpen" class="modal">
+    <div class="modal-wrapper">
+      <h3 class="modal-text">
+        Наши тарифные планы станут доступны с 1 января 2025 года. Следите за новостями, чтобы выбрать подходящий
+        вариант!
+      </h3>
+      <div class="modal-quit" @click="toggleModal" />
     </div>
   </div>
 </template>

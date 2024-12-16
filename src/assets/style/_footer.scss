@@ -102,4 +102,125 @@
       }
     }
   }
+
+  @media (max-width: 1200px) {
+    padding: 50px 110px;
+    &-section {
+      &__info {
+        gap: 20px;
+        &-desc {
+          max-width: 300px;
+          font-size: 15px;
+        }
+        &-title {
+          font-size: 18px;
+        }
+        &-menus {
+          max-width: 220px;
+        }
+      }
+      &__adver {
+        gap: 15px;
+      }
+    }
+  }
+
+  @media (max-width: 992px) {
+    padding: 40px 80px;
+    gap: 20px;
+    &-section {
+      &__info {
+        &-wrapper {
+          gap: 20px;
+        }
+        &-logo {
+          img {
+            height: 60px;
+          }
+        }
+        &-desc {
+          max-width: 300px;
+          font-size: 15px;
+        }
+        &-title {
+          font-size: 18px;
+        }
+        &-menus {
+          max-width: 220px;
+          gap: 15px;
+        }
+        &-menu {
+          font-size: 14px;
+          line-height: 18px;
+        }
+      }
+      &__adver {
+        flex-direction: column;
+        &-name,
+        &-list {
+          font-size: 13px;
+        }
+        &-lists {
+          gap: 20px;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    padding: 20px 40px;
+    &-section {
+      &__info {
+        align-items: center;
+        flex-direction: column;
+        &-logo {
+          align-items: center;
+        }
+        &-desc {
+          text-align: center;
+        }
+        &-wrapper {
+          align-items: center;
+        }
+        &-menus {
+          align-items: center;
+          text-align: center;
+        }
+      }
+      &__adver {
+        flex-direction: column;
+        gap: 10px;
+        &-lists {
+          flex-direction: column;
+          gap: 10px;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 480px) {
+    padding: 10px 30px;
+    gap: 15px;
+    &-section {
+      gap: 15px;
+      &__info {
+        flex-direction: column;
+        gap: 15px;
+        &-desc {
+          max-width: 200px;
+          font-size: 12px;
+        }
+        &-title {
+          font-size: 14px;
+        }
+      }
+      &__adver {
+        gap: 8px;
+        &-name,
+        &-list {
+          font-size: 12px;
+        }
+      }
+    }
+  }
 }

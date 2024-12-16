@@ -23,7 +23,7 @@ const statis = reactive([
   <div class="statis">
     <div class="statis-wrapper container">
       <div class="statis-section">
-        <div class="statis-container" v-for="item in statis" :key="item.id">
+        <div class="statis-container reveal" :style="{ '--i': item.id }" v-for="item in statis" :key="item.id">
           <h1 class="statis-container__title">{{ item.number }}</h1>
           <p class="statis-container__desc">{{ item.title }}</p>
         </div>

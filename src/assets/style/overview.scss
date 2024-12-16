@@ -52,7 +52,7 @@
 
         .overview-container__section {
           &-icon {
-            filter: brightness(150%);
+            filter: invert(1) sepia(87%) saturate(364%) hue-rotate(173deg) brightness(2) contrast(99%);
             fill: #fff;
           }
           &-title {
@@ -85,6 +85,7 @@
     }
   }
   @media (max-width: 1440px) {
+    padding: 0 0 100px 0;
     &-section {
       gap: 50px;
     }
@@ -112,6 +113,7 @@
   }
 
   @media (max-width: 1200px) {
+    padding: 0 0 60px 0;
     &-section {
       gap: 40px;
     }
@@ -129,8 +131,8 @@
     }
   }
 
-  @media (max-width: 920px) {
-    padding: 0 0 80px 0;
+  @media (max-width: 992px) {
+    padding: 0 0 40px 0;
 
     &-section {
       gap: 30px;
@@ -144,18 +146,12 @@
       }
       &__section {
         padding: 15px 40px 15px 15px;
-        &-title {
-          font-size: 14px;
-        }
-        &-desc {
-          font-size: 11px;
-        }
       }
     }
   }
 
   @media (max-width: 768px) {
-    padding: 0 0 60px 0;
+    padding: 0 0 30px 0;
 
     &-section {
       gap: 20px;
@@ -178,6 +174,7 @@
   }
 
   @media (max-width: 480px) {
+    padding: 0 0 20px 0;
     &-section {
       gap: 15px;
     }

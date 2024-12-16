@@ -3,28 +3,36 @@ import { reactive } from "vue";
 import userFirst from "../assets/icons/again-user-first.svg";
 import userSecond from "../assets/icons/again-user-second.svg";
 import userThird from "../assets/icons/again-user-third.svg";
+import userFourth from "../assets/icons/again-user-fourth.svg";
 
 const data = reactive([
   {
     id: 1,
-    desc: `"Система отправки и получения документов просто спасла нашу компанию от бумажной ада. Мы больше не тратим часы на ожидание и подписывание бумаг. Очень рекомендуем!"`,
+    desc: `В банковской сфере важны безопасность и точность при работе с документами. Hujjat.uz помог автоматизировать процессы, упростить взаимодействие и сократить время обработки документов.`,
     userImage: userFirst,
-    name: "Patricia Sanders",
-    work: "Бухгалтер"
+    name: "Миржон Разаков",
+    work: "JSCB “Agrobank”"
   },
   {
     id: 2,
-    desc: `"Это решение сэкономило нам не только время, но и деньги. Больше нет необходимости в большом офисе для хранения бумажных документов. Спасибо!"`,
+    desc: `Управление документами для масштабных проектов часто бывает сложным, но с Hujjat.uz стало намного легче. Система позволяет быстро обмениваться документами и контролировать процесс их согласования.`,
     userImage: userSecond,
-    name: "Rodger Struck",
-    work: "Мененджер"
+    name: "Сардор Шарипов",
+    work: "“ENTER ENGINEERING” PTE.LTD DM"
   },
   {
     id: 3,
-    desc: `"Я не могу поверить, насколько это удивительно просто. Все мои документы теперь в одном месте, и я могу получить к ним доступ из любой точки мира. Впечатлен!"`,
+    desc: `Hujjat.uz стал для нас отличным решением для управления документами. Мы смогли ускорить процесс подготовки и подписания документов, что особенно важно для агрокластера с большим объемом работы.`,
     userImage: userThird,
-    name: "Eddie Lake",
-    work: "Руководитель"
+    name: "Шароф Бозоров",
+    work: "“AGROCLUSTER R-TEX QORAKO’L” LLC"
+  },
+  {
+    id: 4,
+    desc: `Документооборот в текстильном бизнесе требует оперативности и точности. Благодаря Hujjat.uz мы минимизировали бумажную работу и наладили удобный процесс обмена документами между отделами.`,
+    userImage: userFourth,
+    name: "Баходир Бердимурадов",
+    work: "“SAMARQAND KAMALAK INVEST TEKSTIL” LLC"
   }
 ]);
 </script>
@@ -33,8 +41,8 @@ const data = reactive([
     <div class="again-wrapper container">
       <div class="again-section">
         <div class="again-subtitle">
-          <h1 class="again-subtitle__title">Всё ещё сомневаетесь, подходит ли наша платформа вам?</h1>
-          <p class="again-subtitle__price">Почитайте что говорят о нас наши клиенты</p>
+          <h1 class="again-subtitle__title reveal">Всё ещё сомневаетесь, подходит ли наша платформа вам?</h1>
+          <p class="again-subtitle__price reveal right">Почитайте что говорят о нас наши клиенты</p>
         </div>
         <div class="again-containers">
           <div class="again-container" v-for="item in data" :key="item.id">

@@ -4,6 +4,11 @@ import HamkorBank from "../assets/icons/HamkorBank.png";
 import AloqaBank from "../assets/icons/AloqaBank.png";
 import InfinBank from "../assets/icons/InfinBank.png";
 import SQB from "../assets/icons/SQB.png";
+import enterengineering from "../assets/icons/enterengineering.svg";
+import onlinemahalla from "../assets/icons/onlinemahalla.png";
+import agroonline from "../assets/icons/agroonline.png";
+import expert from "../assets/icons/expert.png";
+import nmttbat from "../assets/icons/nmttbat.png";
 
 const data = reactive([
   {
@@ -21,6 +26,26 @@ const data = reactive([
   {
     id: 4,
     image: HamkorBank
+  },
+  {
+    id: 5,
+    image: enterengineering
+  },
+  {
+    id: 6,
+    image: onlinemahalla
+  },
+  {
+    id: 7,
+    image: agroonline
+  },
+  {
+    id: 8,
+    image: expert
+  },
+  {
+    id: 9,
+    image: nmttbat
   }
 ]);
 </script>
@@ -28,8 +53,10 @@ const data = reactive([
   <section className="marqueue">
     <div class="marqueue-text">
       <div class="compare-subtitle container">
-        <h1 class="compare-subtitle__title">Hujjat.uz уже пользуются</h1>
-        <p class="marqueue-title">Платформа нацелена на работу с физическими а так же с юридическими лицами</p>
+        <h1 class="compare-subtitle__title reveal">Hujjat.uz уже пользуются</h1>
+        <p class="marqueue-title reveal left">
+          Платформа нацелена на работу с физическими а так же с юридическими лицами
+        </p>
       </div>
     </div>
     <div className="marqueue-wrapper">

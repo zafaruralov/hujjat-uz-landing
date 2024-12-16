@@ -3,11 +3,11 @@
   <div class="contact">
     <div class="contact-wrapper container">
       <div class="contact-section">
-        <div class="contact-subtitle">
+        <div class="contact-subtitle reveal">
           <h1 class="contact-subtitle__title">Свяжитесь с нами - и вы сами увидите!</h1>
           <p class="contact-subtitle__desc">делаем ваш бизнес сильнее с помощью цифровых технологий</p>
         </div>
-        <div class="contact-actions">
+        <div class="contact-actions reveal right">
           <div class="contact-actions__number">
             <a href="+ 998 (71) 205-84-84">+ 998 (71) 205-84-84</a>
           </div>

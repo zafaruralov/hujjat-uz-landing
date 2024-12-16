@@ -9,7 +9,7 @@
     padding: 60px 50px;
 
     max-width: 1600px;
-    height: 700px;
+    height: auto;
     border-radius: 30px;
 
     background: linear-gradient(138deg, #084e8c 15.31%, #097be0 84.79%);
@@ -96,7 +96,7 @@
     width: 820.308px;
     height: 768.548px;
     flex-shrink: 0;
-    animation: rotate360 1.2s forwards;
+    animation: rotate360 2.2s forwards;
     opacity: 0.08;
     right: 0;
   }
@@ -106,7 +106,6 @@
 
     &-wrapper {
       padding: 30px 20px;
-      height: 600px;
     }
 
     &-section {
@@ -135,10 +134,6 @@
 
   @media (max-width: 1200px) {
     padding: $padding-1200;
-
-    &-wrapper {
-      height: 550px;
-    }
 
     &-section {
       gap: 24px;
@@ -175,7 +170,6 @@
     padding: $padding-920;
 
     &-wrapper {
-      height: 500px;
       padding: 20px 16px;
       display: flex;
       flex-direction: column;
@@ -235,7 +229,6 @@
 
     &-wrapper {
       padding: 10px 8px;
-      height: auto;
     }
 
     &-section {

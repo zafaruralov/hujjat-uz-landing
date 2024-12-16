@@ -5,7 +5,7 @@ import footerLayout from "@/components/footer.vue";
 </script>
 
 <template>
-  <!-- <navbar /> -->
+  <navbar />
   <layout />
-  <!-- <footer-layout /> -->
+  <footer-layout />
 </template>

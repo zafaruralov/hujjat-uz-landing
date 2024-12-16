@@ -6,15 +6,15 @@ import whyLogo from "@/assets/icons/why-comp.png";
     <div class="why-section container">
       <div class="why-wrapper">
         <div class="why-subtitle">
-          <h1 class="why-subtitle__title">Почему Hujjat.uz?</h1>
-          <p class="why-subtitle__desc">
+          <h1 class="why-subtitle__title reveal">Почему Hujjat.uz?</h1>
+          <p class="why-subtitle__desc reveal">
             Hujjat.uz - это низко затратная система обработки транзакций, которая эффективно использует информационные
             технологии для преобразования ручного и бумажного процесса оформления документов в более быструю и более
             эффективную электронную систему формирования и ведения учета. При работе в системе традиционные бумажные
             документы заменяется на электронные документы.
           </p>
         </div>
-        <div class="why-actions">
+        <div class="why-actions reveal left">
           <div class="action secondary">
             Начать работу
             <div class="action-icon right">
@@ -43,7 +43,7 @@ import whyLogo from "@/assets/icons/why-comp.png";
           </div>
         </div>
       </div>
-      <div class="why-image">
+      <div class="why-image reveal right">
         <img :src="whyLogo" alt="phone image" />
       </div>
     </div>

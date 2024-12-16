@@ -20,6 +20,7 @@
       line-height: 62.4px;
     }
     &__desc {
+      max-width: 469px;
       color: #646464;
       text-align: center;
       font-size: 20px;
@@ -45,6 +46,7 @@
     border-radius: 24px;
     background: #fff;
     transition: all 0.4s;
+    cursor: pointer;
 
     &.active {
       border-radius: 24px;
@@ -200,12 +202,32 @@
     }
   }
   @media (max-width: 1440px) {
+    &-wrapper {
+      padding: $padding-1440;
+    }
     &-sections {
       grid-template-columns: repeat(3, auto);
+      gap: 12px;
     }
     &-container {
       height: 450px;
-      width: 350px;
+      width: 300px;
+      padding: 18px;
+
+      &__text {
+        gap: 10px;
+      }
+      &__actions {
+        gap: 10px;
+      }
+      &__limit {
+        font-size: 18px;
+        line-height: 22px;
+      }
+      &__desc {
+        font-size: 14px;
+        line-height: 20.4px;
+      }
       &__subtitle {
         &-title {
           font-size: 22px;
@@ -215,12 +237,33 @@
   }
 
   @media (max-width: 1200px) {
+    &-wrapper {
+      padding: $padding-1200;
+    }
     &-sections {
-      grid-template-columns: repeat(2, auto);
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
     }
     &-container {
-      height: 400px;
       width: 300px;
+      height: auto;
+      gap: 10px;
+      &__actions {
+        &-price {
+          font-size: 28px;
+          line-height: 30px;
+        }
+      }
+      &__limit {
+        font-size: 16px;
+        line-height: 20px;
+      }
+      &__desc {
+        font-size: 12px;
+        line-height: 18.4px;
+      }
+
       &__subtitle {
         &-title {
           font-size: 20px;
@@ -229,18 +272,61 @@
     }
   }
 
-  @media (max-width: 920px) {
+  @media (max-width: 992px) {
+    &-wrapper {
+      padding: $padding-920;
+    }
     &-sections {
-      grid-template-columns: 1fr;
+      grid-template-columns: 1fr 1fr;
+      display: grid;
       gap: 16px;
     }
+    &-section {
+      gap: 40px;
+    }
+    &-integration {
+      grid-area: 3 / 1 / span 3 / span 2;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      &__subtitle {
+        align-items: center;
+        text-align: center;
+        align-self: center;
+      }
+    }
     &-container {
-      height: 380px;
-      width: 100%;
+      width: auto;
+      padding: 12px;
+      &__actions {
+        &-price {
+          font-size: 22px;
+          line-height: 26px;
+        }
+      }
+      &__text {
+        gap: 8px;
+      }
+
+      &__subtitle {
+        align-self: center;
+        &-wrapper {
+          padding: 2px 4px;
+        }
+        &-text {
+          font-size: 8px;
+        }
+        &-title {
+          font-size: 20px;
+        }
+      }
     }
   }
 
   @media (max-width: 768px) {
+    &-wrapper {
+      padding: $padding-768;
+    }
     &-subtitle {
       &__title {
         font-size: 32px;
@@ -253,6 +339,9 @@
   }
 
   @media (max-width: 480px) {
+    &-wrapper {
+      padding: $padding-480;
+    }
     &-subtitle {
       &__title {
         font-size: 28px;
@@ -264,9 +353,82 @@
       }
     }
     &-container {
-      height: auto;
       width: 100%;
       padding: 16px;
+    }
+  }
+}
+
+.modal {
+  z-index: 11;
+  position: fixed;
+  top: 40%;
+  right: 40%;
+  &-wrapper {
+    padding: 50px;
+    border-radius: 24px;
+    background: #fff;
+    box-shadow: 0px 4px 24px 0px rgba(0, 0, 0, 0.623);
+
+    width: 400px;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+
+  &-text {
+    color: #909090;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    max-width: 930px;
+    text-align: center;
+  }
+  &-quit {
+    position: absolute;
+    display: flex;
+    top: 30px;
+    right: 30px;
+    width: 25px;
+    height: 25px;
+    transform: translateY(-50%);
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: 5s;
+
+    &::before {
+      width: 3px;
+      height: 20px;
+    }
+
+    &::after {
+      width: 20px;
+      height: 3px;
+    }
+
+    &::after,
+    &::before {
+      content: "";
+      display: flex;
+      transition: 0.2s;
+      position: absolute;
+      background: #000;
+    }
+    &:hover {
+      &::before {
+        transform: rotate(45deg);
+      }
+      &::after {
+        transform: rotate(45deg);
+      }
+    }
+
+    @media (max-width: 768px) {
+      right: 20px;
+      width: 22px;
+      height: 22px;
     }
   }
 }

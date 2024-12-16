@@ -3,7 +3,7 @@
   <div class="info">
     <div class="info-wrapper container">
       <div class="info-section">
-        <div class="info-section__address">
+        <div class="info-section__address reveal">
           <div class="info-section__address-subtitle">
             <p class="info-section__address-desc">Адрес:</p>
             <h1 class="info-section__address-title">
@@ -19,7 +19,7 @@
             <h1 class="info-section__address-number">info@realsoft.uz</h1>
           </div>
         </div>
-        <div class="info-section__form">
+        <div class="info-section__form reveal">
           <h1 class="info-section__form-title">Форма для обратной связи</h1>
           <div class="info-section__form-inputs">
             <input type="text" class="input info-section__form-input" placeholder="Ваше имя" />

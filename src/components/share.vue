@@ -8,9 +8,9 @@ import shareGroup from "../assets/icons/share-group.png";
       <div class="share-section">
         <div class="share-section__wrapper">
           <div class="share-section__wrapper-content">
-            <h1 class="share-section__wrapper-title">Легко обменивайтесь своими документами онлайн!</h1>
+            <h1 class="share-section__wrapper-title reveal">Легко обменивайтесь своими документами онлайн!</h1>
             <ul class="share-section__lists">
-              <li class="share-section__list">
+              <li class="share-section__list reveal">
                 <div class="share-section__list-icon">
                   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                     <mask
@@ -49,7 +49,7 @@ import shareGroup from "../assets/icons/share-group.png";
                   затрат на печать
                 </p>
               </li>
-              <li class="share-section__list">
+              <li class="share-section__list reveal right">
                 <div class="share-section__list-icon">
                   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                     <mask
@@ -90,7 +90,7 @@ import shareGroup from "../assets/icons/share-group.png";
               </li>
             </ul>
           </div>
-          <div class="share-section__action">
+          <div class="share-section__action reveal">
             <div class="action secondary">
               Начать работу
               <div class="action-icon right">
@@ -107,7 +107,7 @@ import shareGroup from "../assets/icons/share-group.png";
           </div>
         </div>
         <div class="share-section-icon"></div>
-        <div class="share-section__icon">
+        <div class="share-section__icon reveal right">
           <img :src="shareSilver" alt="silver icon" />
         </div>
       </div>
